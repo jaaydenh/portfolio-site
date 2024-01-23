@@ -11,16 +11,11 @@ export default function Page() {
           <h1 className="text-4xl font-bold tracking-tight text-slate-100 sm:text-5xl">
             Jaayden Halko
           </h1>
-          <h2 className="mt-3 animate-fadeIn text-lg font-medium tracking-tight text-slate-100">
+          <h2 className="mt-3text-lg font-medium tracking-tight text-slate-100">
             Full-Stack Software Engineer
           </h2>
-          <p className="mt-3 animate-fadeIn ">
-            I build products for the modern web.
-          </p>
-          <ul
-            className="mt-8 flex animate-fadeIn items-center"
-            aria-label="social media"
-          >
+          <p className="mt-3">I build products for the modern web.</p>
+          <ul className="mt-8 flex items-center" aria-label="social media">
             <li className="mr-5 text-xs">
               <Link
                 className="hover:text-slate-200"
@@ -59,7 +54,7 @@ export default function Page() {
             </li>
           </ul>
         </header>
-        <main className="m-auto flex max-w-prose animate-fadeIn flex-col px-6 py-6">
+        <main className="m-auto flex max-w-prose flex-col px-6 py-6">
           <div className="mb-12">
             <h2 className="my-8 text-sm font-bold uppercase tracking-widest text-slate-100">
               About
