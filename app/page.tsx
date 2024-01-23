@@ -11,18 +11,21 @@ export default function Page() {
           <h1 className="text-4xl font-bold tracking-tight text-slate-100 sm:text-5xl">
             Jaayden Halko
           </h1>
-          <h2 className="mt-3text-lg font-medium tracking-tight text-slate-100">
+          <h2 className="mt-3 text-lg font-medium tracking-tight text-slate-100">
             Full-Stack Software Engineer
           </h2>
           <p className="mt-3">I build products for the modern web.</p>
           <ul className="mt-8 flex items-center" aria-label="social media">
             <li className="mr-5 text-xs">
               <Link
-                className="hover:text-slate-200"
+                className="hover:text-slate-100"
+                title="LinkedIn"
+                aria-label="LinkedIn (opens in a new tab)"
                 href="https://www.linkedin.com/in/jaaydenhalko/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
+                <span className="sr-only">LinkedIn</span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
@@ -36,11 +39,14 @@ export default function Page() {
             </li>
             <li className="mr-5 text-xs">
               <Link
-                className="hover:text-slate-200"
+                className="hover:text-slate-100"
+                title="Github"
+                aria-label="GitHub (opens in a new tab)"
                 href="https://github.com/jaaydenh"
                 target="_blank"
                 rel="noopener noreferrer"
               >
+                <span className="sr-only">Github</span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 16 16"
@@ -55,7 +61,7 @@ export default function Page() {
           </ul>
         </header>
         <main className="m-auto flex max-w-prose flex-col px-6 py-6">
-          <div className="mb-12">
+          <section className="mb-12" aria-label="About me">
             <h2 className="my-8 text-sm font-bold uppercase tracking-widest text-slate-100">
               About
             </h2>
@@ -74,8 +80,8 @@ export default function Page() {
               Outside of coding I devote my time to fitness, prehab and learning
               about the latest advances in human longevity.
             </p>
-          </div>
-          <div className="mb-12">
+          </section>
+          <section className="mb-12" aria-label="Work experience">
             <h2 className="my-8 text-sm font-bold uppercase tracking-widest text-slate-100">
               EXPERIENCE
             </h2>
@@ -206,14 +212,14 @@ export default function Page() {
                 href="resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="View Full Resume (opens in a new tab)"
               >
                 View Full Resume{' '}
                 <ArrowTopRightOnSquareIcon className="ml-1 h-4 w-4" />
               </Link>
             </div>
-          </div>
-
-          <div>
+          </section>
+          <section aria-label="Projects">
             <h2 className="my-8 text-sm font-bold uppercase tracking-widest text-slate-100">
               PROJECTS
             </h2>
@@ -259,7 +265,7 @@ export default function Page() {
                 guesses or less by hearing a short clip of the song.
               </Project>
             </ul>
-          </div>
+          </section>
         </main>
       </div>
     </div>

@@ -28,7 +28,12 @@ export default function Experience({
         {start} — {end}
       </p>
       <h3 className="my-3 font-medium leading-tight text-slate-100 hover:text-blue-400">
-        <Link href={companyHref} target="_blank" className="inline-flex">
+        <Link
+          href={companyHref}
+          target="_blank"
+          className="inline-flex"
+          aria-label={`${company} (opens in a new tab)`}
+        >
           {title} · {company}{' '}
           <ArrowTopRightOnSquareIcon className="ml-1 h-4 w-4" />
         </Link>
@@ -46,6 +51,7 @@ export default function Experience({
                   href={project.url}
                   target="_blank"
                   className="inline-flex items-center font-medium"
+                  aria-label={`${project.name} (opens in a new tab)`}
                 >
                   <LinkIcon className="mr-1 h-3 w-3" />
                   {project.name}

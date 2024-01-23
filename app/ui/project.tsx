@@ -19,11 +19,15 @@ export default function Project({
 }: ProjectProps) {
   return (
     <li className="mb-16">
-      <div className="relative grid gap-4 sm:grid-cols-8 sm:gap-8 lg:hover:!opacity-100 lg:group-hover:opacity-50">
-        <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
+      <div className="relative grid gap-4 sm:grid-cols-8 sm:gap-8">
         <div className="sm:order-2 sm:col-span-6">
           <h3 className="font-medium leading-tight text-slate-100 hover:text-blue-400">
-            <Link href={projectHref} target="_blank" className="inline-flex">
+            <Link
+              href={projectHref}
+              target="_blank"
+              className="inline-flex"
+              aria-label={`${name} (opens in a new tab)`}
+            >
               {name}
               <ArrowTopRightOnSquareIcon className="ml-1 h-4 w-4" />
             </Link>
