@@ -29,6 +29,17 @@ export default function Project({
             </Link>
           </h3>
           <p className="mt-2 text-sm">{children}</p>
+          <ul className="mt-3">
+            {skills &&
+              skills.map((skill) => (
+                <li
+                  key={skill}
+                  className="mb-2 mr-2 inline-block rounded-lg bg-blue-700 bg-opacity-30 px-3 py-1 text-xs text-blue-400"
+                >
+                  {skill}
+                </li>
+              ))}
+          </ul>
         </div>
         <Image
           src={src}
@@ -38,17 +49,6 @@ export default function Project({
           alt="Screenshots of the dashboard project showing desktop version"
         />
       </div>
-      <ul className="mt-3">
-        {skills &&
-          skills.map((skill) => (
-            <li
-              key={skill}
-              className="mb-2 mr-2 inline-block rounded-lg bg-blue-700 bg-opacity-30 px-3 py-1 text-xs text-blue-400"
-            >
-              {skill}
-            </li>
-          ))}
-      </ul>
     </li>
   );
 }
