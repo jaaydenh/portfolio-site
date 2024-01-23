@@ -5,20 +5,20 @@ import Project from './ui/project';
 
 export default function Page() {
   return (
-    <div className="m-auto flex min-h-screen flex-col bg-black p-6">
-      <div className="mt-4  ">
+    <div className="m-auto min-h-screen bg-black p-6">
+      <div className="mt-4">
         <header className="m-auto max-w-prose px-6 py-10">
-          <h1 className="flex text-4xl font-bold tracking-tight text-slate-100 sm:text-5xl">
+          <h1 className="text-4xl font-bold tracking-tight text-slate-100 sm:text-5xl">
             Jaayden Halko
           </h1>
-          <h2 className="animate-fadeIn mt-3 text-lg font-medium tracking-tight text-slate-100">
+          <h2 className="mt-3 animate-fadeIn text-lg font-medium tracking-tight text-slate-100">
             Full-Stack Software Engineer
           </h2>
-          <p className="animate-fadeIn mt-3 ">
+          <p className="mt-3 animate-fadeIn ">
             I build products for the modern web.
           </p>
           <ul
-            className="animate-fadeIn mt-8 flex items-center"
+            className="mt-8 flex animate-fadeIn items-center"
             aria-label="social media"
           >
             <li className="mr-5 text-xs">
@@ -59,7 +59,7 @@ export default function Page() {
             </li>
           </ul>
         </header>
-        <main className="animate-fadeIn m-auto flex max-w-prose flex-col p-6">
+        <main className="m-auto flex max-w-prose animate-fadeIn flex-col px-6 py-6">
           <div className="mb-12">
             <h2 className="my-8 text-sm font-bold uppercase tracking-widest text-slate-100">
               About
@@ -249,20 +249,19 @@ export default function Page() {
                 name={'Fourzy'}
                 src={'/fourzy.png'}
                 projectHref={'https://www.fourzy.com/'}
+                skills={['Unity', 'Playfab', 'Azure', 'Photon Engine']}
               >
                 A reimagining of Connect 4 as an online multiplayer board game
-                for iOS, Android and Steam. Built using Unity, Playfab, Azure
-                and Photon Engine.
+                for iOS, Android and Steam.
               </Project>
               <Project
                 name={'Beadle'}
                 src={'/beadle.png'}
                 projectHref={'https://beadle.gg/'}
+                skills={['React', 'Javascript', 'Node.js']}
               >
-                This is a test description. This is a test description. This is
-                a test description. This is a test description. This is a test
-                description. This is a test description. This is a test
-                description.
+                A Heardle remake for Beatles fans. Guess the Beatles song in 5
+                guesses or less by hearing a short clip of the song.
               </Project>
             </ul>
           </div>
