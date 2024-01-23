@@ -29,7 +29,10 @@ export default function Project({
               aria-label={`${name} (opens in a new tab)`}
             >
               {name}
-              <ArrowTopRightOnSquareIcon className="ml-1 h-4 w-4" />
+              <ArrowTopRightOnSquareIcon
+                className="ml-1 h-4 w-4"
+                aria-hidden="true"
+              />
             </Link>
           </h3>
           <p className="mt-2 text-sm">{children}</p>

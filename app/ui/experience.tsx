@@ -35,7 +35,10 @@ export default function Experience({
           aria-label={`${title} at ${company} (opens in a new tab)`}
         >
           {title} · {company}{' '}
-          <ArrowTopRightOnSquareIcon className="ml-1 h-4 w-4" />
+          <ArrowTopRightOnSquareIcon
+            className="ml-1 h-4 w-4"
+            aria-hidden="true"
+          />
         </Link>
       </h3>
       <p className="text-sm ">{children}</p>
@@ -53,7 +56,7 @@ export default function Experience({
                   className="inline-flex items-center font-medium"
                   aria-label={`${project.name} (opens in a new tab)`}
                 >
-                  <LinkIcon className="mr-1 h-3 w-3" />
+                  <LinkIcon className="mr-1 h-3 w-3" aria-hidden="true" />
                   {project.name}
                 </Link>
               </li>
