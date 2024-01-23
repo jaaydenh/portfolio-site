@@ -24,7 +24,7 @@ export default function Experience({
 }: ExperienceProps) {
   return (
     <li className="my-9">
-      <p className="text-xs font-bold uppercase tracking-wide text-slate-500">
+      <p className="text-xs font-bold uppercase tracking-wide text-slate-400">
         {start} — {end}
       </p>
       <h3 className="my-3 font-medium leading-tight text-slate-100 hover:text-blue-400">
@@ -32,7 +32,7 @@ export default function Experience({
           href={companyHref}
           target="_blank"
           className="inline-flex"
-          aria-label={`${company} (opens in a new tab)`}
+          aria-label={`${title} at ${company} (opens in a new tab)`}
         >
           {title} · {company}{' '}
           <ArrowTopRightOnSquareIcon className="ml-1 h-4 w-4" />
