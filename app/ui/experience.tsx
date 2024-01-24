@@ -32,7 +32,7 @@ export default function Experience({
           href={companyHref}
           target="_blank"
           className="inline-flex"
-          aria-label={`${title} at ${company} (opens in a new tab)`}
+          aria-label={`${title} · ${company} (opens in a new tab)`}
         >
           {title} · {company}{' '}
           <ArrowTopRightOnSquareIcon
