@@ -5,7 +5,7 @@ import Project from './ui/project';
 
 export default function Page() {
   return (
-    <div className="m-auto min-h-screen bg-black p-6">
+    <div className="m-auto min-h-screen p-6">
       <div className="mt-4">
         <header className="m-auto max-w-prose px-6 py-10">
           <h1 className="text-4xl font-bold tracking-tight text-slate-100 sm:text-5xl">
@@ -65,7 +65,7 @@ export default function Page() {
             <h2 className="my-8 text-sm font-bold uppercase tracking-widest text-slate-100">
               About
             </h2>
-            <p className="mb-5 ">
+            <p className="mb-5">
               I worked on a wide variety of projects over the last decade
               including xbox.com, the web platform for the PS4, games playable
               through Facebook and Zoom and a free-to-play mobile game.

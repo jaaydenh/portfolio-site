@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { LinkIcon, ArrowTopRightOnSquareIcon } from '@heroicons/react/24/solid';
+import Skill from './skill';
 
 interface ExperienceProps {
   start: string;
@@ -63,16 +64,8 @@ export default function Experience({
             );
           })}
       </ul>
-      <ul className="mt-3  ">
-        {skills &&
-          skills.map((skill) => (
-            <li
-              key={skill}
-              className="mb-2 mr-2 inline-block rounded-lg bg-blue-700 bg-opacity-30 px-3 py-1 text-xs text-blue-400"
-            >
-              {skill}
-            </li>
-          ))}
+      <ul className="mt-3">
+        {skills && skills.map((skill) => <Skill key={skill} skill={skill} />)}
       </ul>
     </li>
   );

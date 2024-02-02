@@ -38,7 +38,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={GeistSans.className}>
-      <body className="bg-black leading-relaxed text-slate-400 antialiased">
+      <body className="bg-gray-900 leading-relaxed text-slate-400 antialiased">
         {children}
         <Analytics />
       </body>
