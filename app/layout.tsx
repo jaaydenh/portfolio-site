@@ -2,6 +2,7 @@ import '@/app/ui/global.css';
 import { Analytics } from '@vercel/analytics/react';
 import { GeistSans } from 'geist/font/sans';
 import { Metadata } from 'next';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import type { Viewport } from 'next';
 
 export const viewport: Viewport = {
@@ -40,6 +41,7 @@ export default function RootLayout({
     <html lang="en" className={GeistSans.className}>
       <body className="bg-gray-900 leading-relaxed text-slate-400 antialiased">
         {children}
+        <SpeedInsights />
         <Analytics />
       </body>
     </html>
