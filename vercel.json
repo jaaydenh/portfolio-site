@@ -7,10 +7,6 @@
     {
       "source": "/blog/:path+",
       "destination": "https://blog-site-pi-eight.vercel.app/blog/:path+"
-    },
-    {
-      "source": "/blog-static/_next/:path+",
-      "destination": "https://blog-site-pi-eight.vercel.app/blog-static/_next/:path+"
     }
   ]
 }
