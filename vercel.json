@@ -3,6 +3,7 @@
     {
       "source": "/blog/:path*",
       "destination": "https://blog-site-pi-eight.vercel.app/:path*"
-    }
+    },
+    { "source": "/(.*)", "destination": "/" }
   ]
 }
