@@ -2,8 +2,11 @@
   "rewrites": [
     {
       "source": "/blog/:path*",
-      "destination": "https://blog-site-pi-eight.vercel.app/:path*"
+      "destination": "https://blog-site-pi-eight.vercel.app/blog/:path*"
     },
-    { "source": "/(.*)", "destination": "/" }
+    {
+      "source": "/blog",
+      "destination": "https://blog-site-pi-eight.vercel.app/blog"
+    },
   ]
 }
