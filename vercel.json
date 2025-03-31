@@ -1,0 +1,6 @@
+{
+    "rewrites": [
+      { "source": "/blog/:subdir*", "destination": "https://blog-site-pi-eight.vercel.app/:subdir*" },
+      { "source": "/(.*)", "destination": "/" }
+    ]
+  }
